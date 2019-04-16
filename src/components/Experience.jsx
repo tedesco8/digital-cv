@@ -3,8 +3,10 @@ import React from 'react';
 const Experience = () => (
     <div className="Experience">
        <div className="Experience-container">
-          <h3>Trabajo uno</h3>
-          <p>Aprndi mucho</p>
+         <div className="Experience-item">
+            <h3>Trabajo uno</h3>
+            <p>Aprndi mucho</p>
+         </div>
        </div>
     </div>
 );
