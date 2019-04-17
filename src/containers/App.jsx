@@ -7,13 +7,11 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
-import React, { Fragment } from 'react';
 
 //retornamos nuestra estructura
 const App = () => {
     return (
         <Main>
-            <Fragment>
             <Sidebar>
                 <About />
             </Sidebar>
@@ -23,9 +21,8 @@ const App = () => {
                 <Certificates />
                 <Skills />
             </Info>
-            </Fragment>
         </Main>
     );
-}
+};
 
 export default App;
