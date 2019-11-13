@@ -20,33 +20,31 @@ body {
 `;
 //retornamos nuestra estructura
 const App = () => {
-    const data = api();
-    console.log(data);
-    return data.length == 0 ? <h1>Cargando ...</h1> : (
+    return (
         <Main>
             <GlobalStyle />
             <Sidebar>
                 <About 
-                avatar={data.avatar}
-                name={data.name}
-                profession={data.profession}
-                bio={data.bio}
-                address={data.address}
-                social={data.social}
+                avatar={api.avatar}
+                name={api.name}
+                profession={api.profession}
+                bio={api.bio}
+                address={api.address}
+                social={api.social}
                 />
             </Sidebar>
             <Info>
                 <Education 
-                data={data.education}
+                data={api.education}
                 />
                 <Experience 
-                data={data.experience}
+                data={api.experience}
                 />
                 <Certificates 
-                data={data.certificate}
+                data={api.certificate}
                 />
                 <Skills 
-                data={data.skills}
+                data={api.skills}
                 />
             </Info>
         </Main>
