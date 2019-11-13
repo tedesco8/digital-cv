@@ -8,7 +8,7 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
-import useGetData from '../hooks/useGetDara';
+import api from '../hooks/useGetDara';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -20,7 +20,7 @@ body {
 `;
 //retornamos nuestra estructura
 const App = () => {
-    const data = useGetData();
+    const data = api();
     console.log(data);
     return data.length == 0 ? <h1>Cargando ...</h1> : (
         <Main>
