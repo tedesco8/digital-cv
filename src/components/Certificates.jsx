@@ -7,7 +7,7 @@ const Certificates = props => (
    <div className="Certificates">
    <H2Styled name="Certificates" />
       <div className="Certificates-container">
-       {props.data.map((cer, index) => (
+       {Object.values(props.data).map((cer, index) => (
          <div className="Certificates-item" key={`Cer-${index}`}>
            <H3Styled>{cer.name} {cer.institution}
               <span>{cer.date}</span>
