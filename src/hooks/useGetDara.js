@@ -25,6 +25,32 @@ const api = {
         url: "https://www.linkedin.com/in/pablo-tedesco/"
       }
     },
+    referencia: {
+      "0": {
+        nombre: "Nicolas Lutter",
+        cargo: "Líder Técnico",
+        empresa: "Middlesoft",
+        tel: "096408160"
+      },
+      "1": {
+        nombre: "Fernanda Py Silva",
+        cargo: "HR Manager",
+        empresa: "Middlesoft",
+        tel: "098250644"
+      },
+      "2": {
+        nombre: "Leticia De Los Santos",
+        cargo: "Analista en Sistemas",
+        empresa: "BLACKSOFT",
+        tel: "099704354"
+      },
+      "3": {
+        nombre: "Juan Damian Pajares",
+        cargo: "Consultor TIC",
+        empresa: "BITNET",
+        tel: "098476411"
+      }
+    },
     experience: {
       "0": {
         jobTitle: "Fullstack Developer Jr -",

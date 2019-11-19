@@ -31,6 +31,7 @@ const App = () => {
           bio={api.data.bio}
           address={api.data.address}
           social={api.data.social}
+          referencia={api.data.referencia}
         />
       </Sidebar>
       <Info>
