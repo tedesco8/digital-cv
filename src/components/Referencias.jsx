@@ -7,12 +7,12 @@ const Referencias = props => (
    <div className="Referencias">
    <H2Styled name="Referencias" />
       <div className="Referencias-container">
-       {Object.values(props.data).map((cer, index) => (
-         <div className="Referencias-item" key={`Cer-${index}`}>
-           <H3Styled>{cer.nombre} {cer.cargo}
-              <span>{cer.empresa}</span>
+       {Object.values(props.data).map((item, index) => (
+         <div className="Referencias-item" key={`item-${index}`}>
+           <H3Styled>{item.nombre} {item.cargo}
+              <span>{item.empresa}</span>
            </H3Styled>
-           <PStyled name={cer.tel} />
+           <PStyled name={item.tel} />
          </div>
        ))}
       </div>

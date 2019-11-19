@@ -1,5 +1,6 @@
 import React from "react";
 import Social from "./Social";
+import Referencias from "./Referencias";
 import styled from "styled-components";
 
 //Estilos
