@@ -70,7 +70,7 @@ const About = ({ avatar, name, profession, bio, address, social, referencia }) =
         <Social social={social} />
       </div>
       <div className="About-referencias">
-        <Referencias referencia = {referencia} />
+        <Referencias data = {referencia} />
       </div>
     </div>
   </AboutStyle>

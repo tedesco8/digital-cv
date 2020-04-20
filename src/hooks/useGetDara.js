@@ -88,12 +88,12 @@ const api = {
   },
   education: {
     "0": {
-      degree: "Ingeniería en Sistemas -",
-      institution: "Facultad de Ingeniería ",
+      degree: "Ingeniería en Computación -",
+      institution: "Udelar ",
       startDate: "2020",
       endDate: "Presente",
       description:
-        "Esperando apertura de inscripciones para la carrera de Ingenieria en Sistemas"
+        "La formación de﻿l In﻿geniero en Computación apunta a una cobertura amplia y coherente en la planificación, desarrollo, manteni﻿﻿miento y aplicación de sistemas computarizados, que unida a la experiencia adquirida, se proyectará en un profesional competente."
     },
     "1": {
       degree: "Analista Programador -",
@@ -111,58 +111,72 @@ const api = {
     }
   },
   certificate: {
-    "7": {
+    "9": {
       name: "Introducción al Desarollo Web -",
       institution: "Google ",
       date: "2019",
       description: "Curso introductorio al desarrollo web con HTML5 y CSS3 "
     },
-    "6": {
+    "8": {
       name: "Programación Básica -",
       institution: "Platzi ",
       date: "2019",
       description: "Introducción a la programación básica con JavaScript"
     },
-    "5": {
+    "7": {
       name: "Introducción a Machine Learning -",
       institution: "Miríadax ",
       date: "2019",
       description: "Curso introductorio al Aprendizaje Automático"
     },
-    "4": {
+    "6": {
       name: "Modern JavaScript (ES6 Y ES7) -",
       institution: "Udemy ",
       date: "2019",
       description:
         "Aprendizaje de JavaScript bajo los estándares de EcmaScript 6 y 7"
     },
-    "3": {
+    "5": {
       name: "BigData Bussines -",
       institution: "Fundación Telefónica ",
       date: "2019",
       description:
         "Curso realizado con el fin de brindar soluciones tecnológicas a empresas a través de la disciplina Big Data Bussines"
     },
-    "2": {
+    "4": {
       name: "Máster en SQL Server -",
       institution: "Udemy ",
       date: "2019",
       description:
         "Curso realizado con el fin de dominar y gestionar una de los motores de bd más potentes del mercado"
     },
-    "1": {
+    "3": {
       name: "Design Thinking -",
       institution: "Edx ",
       date: "2019",
       description:
         "Curso realizado para adoptar el pensamiento de diseño, con el fin de poder crear soluciones innovadoras."
     },
-    "0": {
+    "2": {
       name: "Python 3 a Django -",
       institution: "Udemy ",
       date: "2019",
       description:
         "Curso realizado para aprender las nociones básicas del este lenguaje de programación"
+    },
+    "1": {
+      name: "Introducción al Aprendizaje Automático con Python -",
+      institution: "Udemy ",
+      date: "2019",
+      description:
+        "Curso realizado para aprender los conceptos básicos de Machine Learning aplicado con Python"
+    },
+    "0": {
+      name: "RestFul Api con Python y Django Rest Framework -",
+      institution: "Udemy ",
+      date: "2020",
+      description:
+        "Curso realizado para aprender a crear servicios Rest utilizando Python"
     }
   },
   skills: {
