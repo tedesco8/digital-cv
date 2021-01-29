@@ -1,4 +1,4 @@
-### Full Stack developer 😋
+### Full Stack developer
 
 I like to create technologies that solve real problems in society or the business world.
 
