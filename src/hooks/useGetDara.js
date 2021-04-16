@@ -5,12 +5,12 @@ const api = {
     name: "Pablo Tedesco",
     profession: "Fullstack Developer",
     bio:
-      "Soy un programador al que le encantan los nuevos desafios. Siempre estoy aprendiendo algo nuevo y mejorando día a día",
+      "Soy un programador al que le encantan los nuevos desafios. Siempre estoy aprendiendo algo nuevo e intentando mejorando día a día",
     address: "Montevideo, Uruguay.",
     social: {
       "0": {
         name: "facebook",
-        url: "https://www.facebook.com/profile.php?id=1341313958"
+        url: "https://www.facebook.com/pablo.tedesco.583/"
       },
       "1": {
         name: "twitter",
@@ -27,77 +27,108 @@ const api = {
     },
     referencia: {
       "0": {
+        nombre: "Nicolás Montossi",
+        cargo: "CEO",
+        empresa: "Teko",
+        tel: "096906906"
+      },
+      "1": {
+        nombre: "Diego Campiño",
+        cargo: "Founder",
+        empresa: "Espacio Natural",
+        tel: "099935252"
+      },
+      "2": {
+        nombre: "Joaquin Vigna",
+        cargo: "Co-founder",
+        empresa: "Broken Rubik",
+        tel: "092522502"
+      },
+      "3": {
         nombre: "Nicolas Lutter",
         cargo: "Líder Técnico",
         empresa: "Middlesoft",
         tel: "096408160"
       },
-      "1": {
+      "4": {
         nombre: "Fernanda Py Silva",
         cargo: "HR Manager",
         empresa: "Middlesoft",
         tel: "098250644"
       },
-      "2": {
+      "5": {
         nombre: "Leticia De Los Santos",
         cargo: "Analista en Sistemas",
         empresa: "BLACKSOFT",
         tel: "099704354"
       },
-      "3": {
+      "6": {
         nombre: "Juan Damian Pajares",
         cargo: "Consultor TIC",
         empresa: "BITNET",
         tel: "098476411"
-      }
+      },
+      "7": {
+        nombre: "Diego Travieso",
+        cargo: "Productor",
+        empresa: "Kubric Media",
+        tel: "099341877"
+      },
     },
     experience: {
       "0": {
-        jobTitle: "Fullstack Developer Jr -",
+        jobTitle: "Fullstack Developer -",
         company: "TedescoDev ",
         startDate: "2018",
         endDate: "Present",
         jobDescription:
-          "Diseño y desarrollo pequeñas aplicaciones de escritorio y web para pequeñas empresas y particulares. También realizo trabajos puntuales en plataformas freelance como Workana."
+          "Diseño y desarrollo de soluciones a problemas y lógicas empresariales, asegurando la correcta ejecución de los requisitos funcionales entre las etapas de diseño y desarrollo."
       },
       "1": {
-        jobTitle: "Fullstack Developer Jr -",
+        jobTitle: "Frontend Developer -",
+        company: "Broken Rubik ",
+        startDate: "2019",
+        endDate: "2020",
+        jobDescription:
+          "Desarrollo de aplicaciones basadas en NetSuite con Backbone.js, jQuery, Handlebars, Bootstrap 3, SuiteScript. "
+      },
+      "2": {
+        jobTitle: "Backend Developer -",
         company: "Middlesoft ",
         startDate: "2019",
         endDate: "2019",
         jobDescription:
-          "Desarrollo de aplicaciones ASP.NET bajo arquitecturas MVC, realizando tareas de frontend y backend con manipulación de base de datos SQL Server."
+          "Desarrollo de aplicaciones ASP.NET y .NET Core con bases de datos SQL Server. "
       },
-      "2": {
+      "3": {
         jobTitle: "Community Manager -",
-        company: "Tedesco Design & Advertising ",
+        company: "SU Noticias ",
         startDate: "2015",
         endDate: "2019",
         jobDescription:
-          "Encargado de gestionar redes sociales, Crear y gestionar perfiles. Hacer crecer la comunidad. Prestar especial atención a tendencias de interés social. Crear y distribuir contenido."
+          "Encargado de gestionar las redes sociales, crear y distribuir contenido."
       },
-      "3": {
-        jobTitle: "Junior Developer -",
-        company: "BLACKSOFT ",
-        startDate: "2017",
-        endDate: "2018",
+      "4": {
+        jobTitle: "Sales and customer service -",
+        company: "Sole trader ",
+        startDate: "2010",
+        endDate: "2014",
         jobDescription:
-          "Me desempeñaba realizando tareas de programación con VB.NET y Java, colaborando con el maquetado de páginas web."
+          "Ventas, atención al cliente, administración, logística."
       }
     },
   },
   education: {
     "0": {
-      degree: "Ingeniería en Computación -",
-      institution: "Udelar ",
-      startDate: "2020",
+      degree: "Ingeniero en Computación -",
+      institution: "Facultad de Ingeniería / Udelar ",
+      startDate: "2021",
       endDate: "Presente",
-      description:
-        "La formación de﻿l In﻿geniero en Computación apunta a una cobertura amplia y coherente en la planificación, desarrollo, manteni﻿﻿miento y aplicación de sistemas computarizados, que unida a la experiencia adquirida, se proyectará en un profesional competente."
+      description: "Educación Terciaria y Universitaria. "
     },
     "1": {
-      degree: "Analista Programador -",
-      institution: "Cuti (Cámara Uruguaya de Tecnologías de la Información) ",
+      degree: "Analista en TI -",
+      institution: "Programa de Formación para el Empleo TI - CUTI/INEFOP ",
       startDate: "2019",
       endDate: "Presente",
       description: "b_IT es un programa de formación 100% online en Tecnologías de la Información de 2 años de duración."
@@ -106,83 +137,72 @@ const api = {
       degree: "Bachiller Tecnológico -",
       institution: "Instituto Superior Brazo Oriental  ",
       startDate: "2013",
-      endDate: "2019",
-      description: "Egresado del bachiller tecnológico CEPT-UTU plan EMT, cursado en ISBO"
+      endDate: "2018",
+      description: "Educación Media Tecnológica"
+    },
+    "3": {
+      degree: "Ciclo Básico -",
+      institution: "Liceo 29 Alicia Goyena  ",
+      startDate: "2001",
+      endDate: "2004",
+      description: "Ciclo Básico"
     }
   },
   certificate: {
-    "9": {
-      name: "Introducción al Desarollo Web -",
-      institution: "Google ",
-      date: "2019",
-      description: "Curso introductorio al desarrollo web con HTML5 y CSS3 "
-    },
-    "8": {
-      name: "Programación Básica -",
-      institution: "Platzi ",
-      date: "2019",
-      description: "Introducción a la programación básica con JavaScript"
-    },
-    "7": {
-      name: "Introducción a Machine Learning -",
-      institution: "Miríadax ",
-      date: "2019",
-      description: "Curso introductorio al Aprendizaje Automático"
-    },
-    "6": {
-      name: "Modern JavaScript (ES6 Y ES7) -",
-      institution: "Udemy ",
-      date: "2019",
+    "0": {
+      name: "Bachiller Tecnológico en Informática -",
+      institution: "Instituto Superior Brazo Oriental ",
+      date: "2021",
       description:
-        "Aprendizaje de JavaScript bajo los estándares de EcmaScript 6 y 7"
+        "Bachiller Tecnológico en Informática con énfasis desarrollo de software, gestión de bases de datos, diseño web y soporte. "
     },
-    "5": {
-      name: "BigData Bussines -",
+    "1": {
+      name: "Programador -",
+      institution: "INEFOP ",
+      date: "2020",
+      description:
+        "Primer año aprobado de un programa de capacitación gubernamental para el empleo en TI patrocinado por INEFOP e impartido por Cuti. "
+    },
+    "2": {
+      name: "Big Data Consultant Jr -",
       institution: "Fundación Telefónica ",
       date: "2019",
       description:
-        "Curso realizado con el fin de brindar soluciones tecnológicas a empresas a través de la disciplina Big Data Bussines"
-    },
-    "4": {
-      name: "Máster en SQL Server -",
-      institution: "Udemy ",
-      date: "2019",
-      description:
-        "Curso realizado con el fin de dominar y gestionar una de los motores de bd más potentes del mercado"
+        "El Big Data Consultant conoce las necesidades analíticas de las áreas de negocio y ayuda a resolverlas, así como a descubrir nuevas oportunidades basadas en la transformación digital y orientación a los datos. "
     },
     "3": {
-      name: "Design Thinking -",
-      institution: "Edx ",
-      date: "2019",
+      name: "Árbitro Oficial -",
+      institution: "Asociación Uruguaya de Fútbol ",
+      date: "2016",
       description:
-        "Curso realizado para adoptar el pensamiento de diseño, con el fin de poder crear soluciones innovadoras."
+        "Curso oficial de AUF para árbitros de fútbol profesional. "
     },
-    "2": {
-      name: "Python 3 a Django -",
-      institution: "Udemy ",
-      date: "2019",
+    "4": {
+      name: "Técnico en reparación PC y Redes -",
+      institution: "Círculo Informático ",
+      date: "2011",
       description:
-        "Curso realizado para aprender las nociones básicas del este lenguaje de programación"
+        "Curso intensivo en reparación de pc y redes informáticas. "
     },
-    "1": {
-      name: "Introducción al Aprendizaje Automático con Python -",
-      institution: "Udemy ",
-      date: "2019",
+    "5": {
+      name: "Salvamento Maritimo -",
+      institution: "Cruz Roja ",
+      date: "2007",
       description:
-        "Curso realizado para aprender los conceptos básicos de Machine Learning aplicado con Python"
+        "Capacitación téorica/física en salvamento marítimo. "
     },
-    "0": {
-      name: "RestFul Api con Python y Django Rest Framework -",
-      institution: "Udemy ",
-      date: "2020",
+    "6": {
+      name: "Primeros Auxilios -",
+      institution: "Cruz Roja ",
+      date: "2007",
       description:
-        "Curso realizado para aprender a crear servicios Rest utilizando Python"
-    }
+        "Capacitación téorica/práctica en pirmeros auxilios. "
+    },
   },
   skills: {
     "0": {
       name: "HTML5",
-      percentage: "70%"
+      percentage: "50%"
     },
     "1": {
       name: "CSS",
@@ -190,43 +210,55 @@ const api = {
     },
     "2": {
       name: "JavaScript",
-      percentage: "50%"
+      percentage: "60%"
     },
     "3": {
       name: "React",
-      percentage: "15%"
+      percentage: "5%"
     },
     "4": {
       name: "Vue",
-      percentage: "20%"
+      percentage: "50%"
     },
     "5": {
-      name: "Node",
-      percentage: "30%"
+      name: "Angular",
+      percentage: "5%"
     },
     "6": {
-      name: "Java",
-      percentage: "10%"
+      name: "Node",
+      percentage: "40%"
     },
     "7": {
       name: ".NET",
-      percentage: "40%"
+      percentage: "20%"
     },
     "8": {
       name: "Python",
-      percentage: "20%"
+      percentage: "10%"
     },
     "9": {
-      name: "IA",
-      percentage: "25%"
+      name: "Java",
+      percentage: "15%"
     },
     "10": {
-      name: "Big Data",
-      percentage: "20%"
+      name: "Testing",
+      percentage: "5%"
     },
     "11": {
-      name: "Blockchain",
-      percentage: "15%"
+      name: "Docker",
+      percentage: "5%"
+    },
+    "12": {
+      name: "Git",
+      percentage: "50%"
+    },
+    "13": {
+      name: "Trabajo en equipo",
+      percentage: "90%"
+    },
+    "14": {
+      name: "Autogestión",
+      percentage: "90%"
     }
   }
 };

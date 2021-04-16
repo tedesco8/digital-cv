@@ -9,9 +9,10 @@ const Referencias = props => (
       <div className="Referencias-container">
        {Object.values(props.data).map((item, index) => (
          <div className="Referencias-item" key={`item-${index}`}>
-           <H3Styled>{item.nombre} {item.cargo}
-              <span>{item.empresa}</span>
+           <H3Styled>{item.nombre}
            </H3Styled>
+           <PStyled name={item.empresa} />
+           <PStyled name={item.cargo} />
            <PStyled name={item.tel} />
          </div>
        ))}

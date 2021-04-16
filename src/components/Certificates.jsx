@@ -9,7 +9,7 @@ const Certificates = props => (
       <div className="Certificates-container">
        {Object.values(props.data).map((cer, index) => (
          <div className="Certificates-item" key={`Cer-${index}`}>
-           <H3Styled>{cer.name} {cer.institution}
+           <H3Styled><b>{cer.name}</b> {cer.institution}
               <span>{cer.date}</span>
            </H3Styled>
            <PStyled name={cer.description} />
