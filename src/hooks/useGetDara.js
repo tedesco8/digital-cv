@@ -202,64 +202,53 @@ const api = {
   skills: {
     "0": {
       name: "HTML5",
-      percentage: "50%"
+      percentage: "70%"
     },
     "1": {
       name: "CSS",
-      percentage: "30%"
+      percentage: "60%"
     },
     "2": {
       name: "JavaScript",
-      percentage: "60%"
+      percentage: "80%"
     },
+
     "3": {
-      name: "React",
-      percentage: "5%"
+      name: "Node",
+      percentage: "70%"
     },
     "4": {
       name: "Vue",
-      percentage: "50%"
+      percentage: "70%"
     },
     "5": {
-      name: "Angular",
-      percentage: "5%"
+      name: "Testing",
+      percentage: "30%"
     },
     "6": {
-      name: "Node",
-      percentage: "40%"
-    },
-    "7": {
-      name: ".NET",
-      percentage: "20%"
-    },
-    "8": {
       name: "Python",
       percentage: "10%"
     },
-    "9": {
+    "7": {
       name: "Java",
-      percentage: "15%"
+      percentage: "30%"
+    },
+    "8": {
+      name: ".NET",
+      percentage: "30%"
+    },
+    "9": {
+      name: "Docker",
+      percentage: "20%"
     },
     "10": {
-      name: "Testing",
-      percentage: "5%"
-    },
-    "11": {
-      name: "Docker",
-      percentage: "5%"
-    },
-    "12": {
       name: "Git",
       percentage: "50%"
     },
-    "13": {
+    "11": {
       name: "Trabajo en equipo",
       percentage: "90%"
     },
-    "14": {
-      name: "Autogestión",
-      percentage: "90%"
-    }
   }
 };
 
