@@ -3,10 +3,12 @@ const api = {
   data: {
     avatar: "https://avatars1.githubusercontent.com/u/45188608?s=460&v=4",
     name: "Pablo Tedesco",
-    profession: "Fullstack Developer",
+    profession: "Software Developer",
     bio:
-      "Soy un programador al que le encantan los nuevos desafios. Siempre estoy aprendiendo algo nuevo e intentando mejorando día a día",
+      "Soy un programador al que le encantan los nuevos desafíos. Siempre estoy aprendiendo algo nuevo e intentando mejorando día a día.",
     address: "Montevideo, Uruguay.",
+    contactPhone: "+59898751130.",
+    contactEmail: "tedesco8@gmail.com",
     social: {
       "0": {
         name: "facebook",
@@ -27,64 +29,54 @@ const api = {
     },
     referencia: {
       "0": {
-        nombre: "Nicolás Montossi",
-        cargo: "CEO",
-        empresa: "Teko",
-        tel: "096906906"
+        nombre: "Pablo Straub",
+        cargo: "Gerente de Proyectos",
+        empresa: "VU Security",
+        tel: "+56998277438"
       },
       "1": {
         nombre: "Diego Campiño",
         cargo: "Founder",
         empresa: "Espacio Natural",
-        tel: "099935252"
+        tel: "+59899935252"
       },
       "2": {
         nombre: "Joaquin Vigna",
         cargo: "Co-founder",
         empresa: "Broken Rubik",
-        tel: "092522502"
+        tel: "+59892522502"
       },
       "3": {
         nombre: "Nicolas Lutter",
         cargo: "Líder Técnico",
         empresa: "Middlesoft",
-        tel: "096408160"
+        tel: "+59896408160"
       },
       "4": {
-        nombre: "Fernanda Py Silva",
-        cargo: "HR Manager",
-        empresa: "Middlesoft",
-        tel: "098250644"
-      },
-      "5": {
         nombre: "Leticia De Los Santos",
         cargo: "Analista en Sistemas",
         empresa: "BLACKSOFT",
-        tel: "099704354"
-      },
-      "6": {
-        nombre: "Juan Damian Pajares",
-        cargo: "Consultor TIC",
-        empresa: "BITNET",
-        tel: "098476411"
-      },
-      "7": {
-        nombre: "Diego Travieso",
-        cargo: "Productor",
-        empresa: "Kubric Media",
-        tel: "099341877"
+        tel: "+59899704354"
       },
     },
     experience: {
       "0": {
-        jobTitle: "Fullstack Developer -",
+        jobTitle: "Software Developer -",
+        company: "VU Security ",
+        startDate: "2021",
+        endDate: "Present",
+        jobDescription:
+          "Me desempeño como desarrollador de aplicativos web con Spring Boot y React.js en el equipo de CIAM."
+      },
+      "1": {
+        jobTitle: "Software Developer -",
         company: "TedescoDev ",
         startDate: "2018",
         endDate: "Present",
         jobDescription:
-          "Diseño y desarrollo de soluciones a problemas y lógicas empresariales, asegurando la correcta ejecución de los requisitos funcionales entre las etapas de diseño y desarrollo."
+          "Responsable de realizar análisis, diseño y programación de soluciones web a problemas y lógicas empresariales."
       },
-      "1": {
+      "2": {
         jobTitle: "Frontend Developer -",
         company: "Broken Rubik ",
         startDate: "2019",
@@ -92,7 +84,7 @@ const api = {
         jobDescription:
           "Desarrollo de aplicaciones basadas en NetSuite con Backbone.js, jQuery, Handlebars, Bootstrap 3, SuiteScript. "
       },
-      "2": {
+      "3": {
         jobTitle: "Backend Developer -",
         company: "Middlesoft ",
         startDate: "2019",
@@ -100,7 +92,7 @@ const api = {
         jobDescription:
           "Desarrollo de aplicaciones ASP.NET y .NET Core con bases de datos SQL Server. "
       },
-      "3": {
+      "4": {
         jobTitle: "Community Manager -",
         company: "SU Noticias ",
         startDate: "2015",
@@ -108,13 +100,45 @@ const api = {
         jobDescription:
           "Encargado de gestionar las redes sociales, crear y distribuir contenido."
       },
-      "4": {
-        jobTitle: "Sales and customer service -",
-        company: "Sole trader ",
+      "5": {
+        jobTitle: "Árbitro Oficial -",
+        company: "Organización de Fútbol del Interior (OFI) ",
+        startDate: "2016",
+        endDate: "2019",
+        jobDescription:
+          "Árbitro oficial en partidos regionales de primera división."
+      },
+      "6": {
+        jobTitle: "Árbitro Oficial -",
+        company: "Asociación Uruguaya de Fútbol (AUF) ",
+        startDate: "2014",
+        endDate: "2016",
+        jobDescription:
+          "Árbitro oficial en partidos oficiales de categoría sub 17 y sub 15."
+      },
+      "7": {
+        jobTitle: "Atención al cliente -",
+        company: "Casa Chiquis ",
         startDate: "2010",
         endDate: "2014",
         jobDescription:
           "Ventas, atención al cliente, administración, logística."
+      },
+      "8": {
+        jobTitle: "Socorrista Acuático -",
+        company: "Seguriocio ",
+        startDate: "2007",
+        endDate: "2009",
+        jobDescription:
+          "Salvamento marítimo por temporadas en piscinas con superficie superior a 200 metros cuadrados."
+      },
+      "9": {
+        jobTitle: "Árbitro Oficial -",
+        company: "Federación Andaluza de Fútbol (RFEF) ",
+        startDate: "2006",
+        endDate: "2010",
+        jobDescription:
+          "Árbitro oficial en partidos regionales de primera división y juveniles."
       }
     },
   },
@@ -130,8 +154,8 @@ const api = {
       degree: "Analista en TI -",
       institution: "Programa de Formación para el Empleo TI - CUTI/INEFOP ",
       startDate: "2019",
-      endDate: "Presente",
-      description: "b_IT es un programa de formación 100% online en Tecnologías de la Información de 2 años de duración."
+      endDate: "2021",
+      description: "Programa de formación online en Tecnologías de la Información."
     },
     "2": {
       degree: "Bachiller Tecnológico -",
@@ -150,48 +174,55 @@ const api = {
   },
   certificate: {
     "0": {
+      name: "Analista en Tecnologías de la Información -",
+      institution: "Programa b_IT ",
+      date: "2021",
+      description:
+        "Segundo y último año aprobado de un programa de capacitación gubernamental para el empleo en TI patrocinado por INEFOP e impartido por Cuti. "
+    },
+    "1": {
       name: "Bachiller Tecnológico en Informática -",
       institution: "Instituto Superior Brazo Oriental ",
       date: "2021",
       description:
         "Bachiller Tecnológico en Informática con énfasis desarrollo de software, gestión de bases de datos, diseño web y soporte. "
     },
-    "1": {
+    "2": {
       name: "Programador -",
-      institution: "INEFOP ",
+      institution: "Programa b_IT ",
       date: "2020",
       description:
         "Primer año aprobado de un programa de capacitación gubernamental para el empleo en TI patrocinado por INEFOP e impartido por Cuti. "
     },
-    "2": {
+    "3": {
       name: "Big Data Consultant Jr -",
       institution: "Fundación Telefónica ",
       date: "2019",
       description:
         "El Big Data Consultant conoce las necesidades analíticas de las áreas de negocio y ayuda a resolverlas, así como a descubrir nuevas oportunidades basadas en la transformación digital y orientación a los datos. "
     },
-    "3": {
+    "4": {
       name: "Árbitro Oficial -",
       institution: "Asociación Uruguaya de Fútbol ",
       date: "2016",
       description:
         "Curso oficial de AUF para árbitros de fútbol profesional. "
     },
-    "4": {
+    "5": {
       name: "Técnico en reparación PC y Redes -",
       institution: "Círculo Informático ",
       date: "2011",
       description:
         "Curso intensivo en reparación de pc y redes informáticas. "
     },
-    "5": {
+    "6": {
       name: "Salvamento Maritimo -",
       institution: "Cruz Roja ",
       date: "2007",
       description:
         "Capacitación téorica/física en salvamento marítimo. "
     },
-    "6": {
+    "7": {
       name: "Primeros Auxilios -",
       institution: "Cruz Roja ",
       date: "2007",
@@ -202,7 +233,7 @@ const api = {
   skills: {
     "0": {
       name: "HTML5",
-      percentage: "70%"
+      percentage: "80%"
     },
     "1": {
       name: "CSS",
@@ -222,20 +253,20 @@ const api = {
       percentage: "70%"
     },
     "5": {
-      name: "Testing",
-      percentage: "30%"
+      name: "React",
+      percentage: "70%"
     },
     "6": {
-      name: "Python",
-      percentage: "10%"
+      name: "Java",
+      percentage: "60%"
     },
     "7": {
-      name: "Java",
-      percentage: "30%"
+      name: ".NET",
+      percentage: "40%"
     },
     "8": {
-      name: ".NET",
-      percentage: "30%"
+      name: "Python",
+      percentage: "20%"
     },
     "9": {
       name: "Docker",
@@ -243,11 +274,11 @@ const api = {
     },
     "10": {
       name: "Git",
-      percentage: "50%"
+      percentage: "80%"
     },
     "11": {
-      name: "Trabajo en equipo",
-      percentage: "90%"
+      name: "Testing",
+      percentage: "40%"
     },
   }
 };

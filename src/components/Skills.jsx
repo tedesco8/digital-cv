@@ -14,7 +14,7 @@ const SkillsLine = styled.div`
   height: 8px;
   position: relative;
   border-radius: 50px;
-  background: #A9CCE3;
+  background: #a9cce3;
 `;
 const move = keyframes`
 0% { background-position: 0 0;}
@@ -23,9 +23,9 @@ const move = keyframes`
 const SkillsSpan = styled.span`
   display: block;
   height: 100%;
-  width: ${props => props.width};
+  width: ${(props) => props.width};
   border-radius: 8px;
-  background-color: #1A5276;
+  background-color: #1a5276;
   overflow: hidden;
   position: relative;
   box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
@@ -54,15 +54,17 @@ const SkillsSpan = styled.span`
   }
 `;
 
-const Skills = props => (
+const Skills = (props) => (
   <div className="Skills">
     <SkillsContainer>
       {Object.values(props.data).map((skill, index) => (
-        <div className="Skills-item" key={`Skills-${index}`}>
+        <div className="Skills-item tooltip top" key={`Skills-${index}`}>
           <SkillsH5>{skill.name}</SkillsH5>
+
           <SkillsLine>
             <SkillsSpan width={skill.percentage} />
           </SkillsLine>
+            <span className="tiptext">{skill.percentage}</span>
         </div>
       ))}
     </SkillsContainer>

@@ -17,8 +17,8 @@ grid-row-gap: 0.5em;
   grid-template-columns: 1fr;
 }
 `;
-const Main = ({ children }) => (
-    <MainStyled>
+const Main = ({ children, id }) => (
+    <MainStyled id={id}>
         <MainContainer>
           {children}
         </MainContainer>
