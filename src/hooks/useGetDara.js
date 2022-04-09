@@ -3,7 +3,7 @@ const api = {
   data: {
     avatar: "https://avatars1.githubusercontent.com/u/45188608?s=460&v=4",
     name: "Pablo Tedesco",
-    profession: "Software Developer",
+    profession: "Ssr. Software Developer",
     bio:
       "Soy un programador al que le encantan los nuevos desafíos. Siempre estoy aprendiendo algo nuevo e intentando mejorando día a día.",
     address: "Montevideo, Uruguay.",
@@ -29,30 +29,42 @@ const api = {
     },
     referencia: {
       "0": {
+        nombre: "Leonardo Ruggieri",
+        cargo: "Líder Técnico",
+        empresa: "VU Security",
+        tel: "+5491161008745"
+      },
+      "1": {
+        nombre: "Ronald Petrussa",
+        cargo: "Scrum Master",
+        empresa: "VU Security",
+        tel: "+5493513077062"
+      },
+      "2": {
         nombre: "Pablo Straub",
         cargo: "Gerente de Proyectos",
         empresa: "VU Security",
         tel: "+56998277438"
       },
-      "1": {
+      "3": {
         nombre: "Diego Campiño",
         cargo: "Founder",
         empresa: "Espacio Natural",
         tel: "+59899935252"
       },
-      "2": {
+      "4": {
         nombre: "Joaquin Vigna",
         cargo: "Co-founder",
         empresa: "Broken Rubik",
         tel: "+59892522502"
       },
-      "3": {
+      "5": {
         nombre: "Nicolas Lutter",
         cargo: "Líder Técnico",
         empresa: "Middlesoft",
         tel: "+59896408160"
       },
-      "4": {
+      "6": {
         nombre: "Leticia De Los Santos",
         cargo: "Analista en Sistemas",
         empresa: "BLACKSOFT",
@@ -61,7 +73,7 @@ const api = {
     },
     experience: {
       "0": {
-        jobTitle: "Software Developer -",
+        jobTitle: "Ssr. Software Developer -",
         company: "VU Security ",
         startDate: "2021",
         endDate: "Present",
@@ -69,7 +81,7 @@ const api = {
           "Me desempeño como desarrollador de aplicativos web con Spring Boot y React.js en el equipo de CIAM."
       },
       "1": {
-        jobTitle: "Software Developer -",
+        jobTitle: "Ssr. Software Developer -",
         company: "TedescoDev ",
         startDate: "2018",
         endDate: "Present",
@@ -77,7 +89,7 @@ const api = {
           "Responsable de realizar análisis, diseño y programación de soluciones web a problemas y lógicas empresariales."
       },
       "2": {
-        jobTitle: "Frontend Developer -",
+        jobTitle: "Jr. Frontend Developer -",
         company: "Broken Rubik ",
         startDate: "2019",
         endDate: "2020",
@@ -85,7 +97,7 @@ const api = {
           "Desarrollo de aplicaciones basadas en NetSuite con Backbone.js, jQuery, Handlebars, Bootstrap 3, SuiteScript. "
       },
       "3": {
-        jobTitle: "Backend Developer -",
+        jobTitle: "Jr. Backend Developer -",
         company: "Middlesoft ",
         startDate: "2019",
         endDate: "2019",
@@ -237,11 +249,11 @@ const api = {
     },
     "1": {
       name: "CSS",
-      percentage: "60%"
+      percentage: "70%"
     },
     "2": {
       name: "JavaScript",
-      percentage: "80%"
+      percentage: "90%"
     },
 
     "3": {
@@ -254,7 +266,7 @@ const api = {
     },
     "5": {
       name: "React",
-      percentage: "70%"
+      percentage: "80%"
     },
     "6": {
       name: "Java",
@@ -266,11 +278,11 @@ const api = {
     },
     "8": {
       name: "Python",
-      percentage: "20%"
+      percentage: "30%"
     },
     "9": {
       name: "Docker",
-      percentage: "20%"
+      percentage: "50%"
     },
     "10": {
       name: "Git",
@@ -278,7 +290,7 @@ const api = {
     },
     "11": {
       name: "Testing",
-      percentage: "40%"
+      percentage: "70%"
     },
   }
 };
