@@ -103,9 +103,9 @@ const About = ({
       <div className="About-social">
         <Social social={social} />
       </div>
-      <AboutPDF onClick={onClick}>
+      {/* <AboutPDF onClick={onClick}>
         <div className="fa fa-file-pdf-o"> Exportar a PDF</div>
-      </AboutPDF>
+      </AboutPDF> */}
       <div className="About-referencias">
         <Referencias data={referencia} />
       </div>

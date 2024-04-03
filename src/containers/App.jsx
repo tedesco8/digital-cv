@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import { createGlobalStyle } from "styled-components";
 import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
@@ -50,6 +52,7 @@ body {
 `;
 //retornamos nuestra estructura
 const App = () => {
+  const { t } = useTranslation();
   const exportPdf = () => {
     html2canvas(document.querySelector("#capture")).then((canvas) => {
       document.body.appendChild(canvas); // if you want see your screenshot in body.
@@ -67,9 +70,9 @@ const App = () => {
       <Sidebar>
         <About
           avatar={api.data.avatar}
-          name={api.data.name}
-          profession={api.data.profession}
-          bio={api.data.bio}
+          name={t('name')}
+          profession={t('profession')}
+          bio={t('bio')}
           address={api.data.address}
           social={api.data.social}
           referencia={api.data.referencia}

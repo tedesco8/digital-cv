@@ -1,14 +1,11 @@
-import { useState, useEffect } from "react";
 const api = {
   data: {
-    avatar: "https://avatars1.githubusercontent.com/u/45188608?s=460&v=4",
+    avatar: "https://res.cloudinary.com/ddzlqebet/image/upload/v1707776594/pablo-tedesco-profile.jpg",
     name: "Pablo Tedesco",
-    profession: "Ssr. Software Developer",
+    profession: "Software Developer",
     bio:
       "Soy un programador al que le encantan los nuevos desafíos. Siempre estoy aprendiendo algo nuevo e intentando mejorando día a día.",
     address: "Montevideo, Uruguay.",
-    contactPhone: "+59898751130.",
-    contactEmail: "tedesco8@gmail.com",
     social: {
       "0": {
         name: "facebook",
@@ -30,8 +27,8 @@ const api = {
     referencia: {
       "0": {
         nombre: "Leonardo Ruggieri",
-        cargo: "Líder Técnico",
-        empresa: "VU Security",
+        cargo: "Technical Lead",
+        empresa: "VU Inc.",
         tel: "+5491161008745"
       },
       "1": {
@@ -42,7 +39,7 @@ const api = {
       },
       "2": {
         nombre: "Pablo Straub",
-        cargo: "Gerente de Proyectos",
+        cargo: "Project Manager",
         empresa: "VU Security",
         tel: "+56998277438"
       },
@@ -60,187 +57,150 @@ const api = {
       },
       "5": {
         nombre: "Nicolas Lutter",
-        cargo: "Líder Técnico",
+        cargo: "Technical Lead",
         empresa: "Middlesoft",
         tel: "+59896408160"
       },
       "6": {
         nombre: "Leticia De Los Santos",
-        cargo: "Analista en Sistemas",
-        empresa: "BLACKSOFT",
+        cargo: "Systems Analyst",
+        empresa: "Lecasabe",
         tel: "+59899704354"
       },
     },
     experience: {
       "0": {
-        jobTitle: "Ssr. Software Developer -",
-        company: "VU Security ",
-        startDate: "2021",
+        jobTitle: "Programming Teacher -",
+        company: "Lecasabe ",
+        startDate: "2024",
         endDate: "Present",
         jobDescription:
-          "Me desempeño como desarrollador de aplicativos web con Spring Boot y React.js en el equipo de CIAM."
+          "Trabajo como tutor y profesor de programación de software para LECASABE creando cursos, workshops y bootcamps online. En este rol trato de brindar mi experiencia personal con respecto a desarrollar software para empresas y los detalles técnicos y prácticos con respecto a los lenguajes Java, JavaScript, HTML y CSS incluyendo sus frameworks y librerías."
       },
       "1": {
-        jobTitle: "Ssr. Software Developer -",
+        jobTitle: "Programming Tutor -",
+        company: "Superprof ",
+        startDate: "2023",
+        endDate: "Present",
+        jobDescription:
+          "En mis tiempos libres brindo tutorías de programación en general, sobre todo a estudiantes y personas que se inician en este campo. Me gusta además de aprender, intentar transmitir lo que he aprendido y dar una mano a todo el que lo necesite siempre que este dentro de mis posibilidades. Me gusta saber que dejo algo de lo que he recibido y además, aprendo mucho de mis pupilos. Para mí es un win win."
+      },
+      "2": {
+        jobTitle: "Software Engineer -",
         company: "TedescoDev ",
         startDate: "2018",
         endDate: "Present",
         jobDescription:
-          "Responsable de realizar análisis, diseño y programación de soluciones web a problemas y lógicas empresariales."
+          "Trabajo como freelance en mis tiempos libres junto a un equipo de profesionales y en asociación con otros. Soy responsable de realizar análisis, diseño y programación de soluciones web a problemas y lógicas empresariales de diferentes sectores. También desempeño funciones de gestión de proyectos, analista, soporte de producto de cara al cliente y de scrum máster."
       },
-      "2": {
-        jobTitle: "Jr. Frontend Developer -",
+      "3": {
+        jobTitle: "Software Developer -",
+        company: "VU Inc. ",
+        startDate: "2021",
+        endDate: "2024",
+        jobDescription:
+          "Me desempeño como desarrollador de aplicativos web en el equipo de Authentication Management y en colaboración con otros. Mi principal función es crear aplicaciones web e híbridas, mantenibles y escalables aplicando técnicas de arquitectura de software y de código limpio con Javascript, Typescript, React, Svelte, Ionic y Capacitor. Participo en el análisis, diseño y desarrollo de nuevas funcionalidades empleando Java y Spring Boot en un contexto de microservicios. "
+      },
+      "4": {
+        jobTitle: "Frontend Developer -",
         company: "Broken Rubik ",
         startDate: "2019",
         endDate: "2020",
         jobDescription:
-          "Desarrollo de aplicaciones basadas en NetSuite con Backbone.js, jQuery, Handlebars, Bootstrap 3, SuiteScript. "
+          "Mi segundo empleo en la industria de desarrollo de aplicaciones web. Las mismas estaban basadas en NetSuite con Backbone.js, jQuery, Handlebars, Bootstrap 3 y SuiteScript. Me costó más de lo que pensaba poder dar el salto de trabajar sin la ayuda y supervision de un mentor. De igual manera, conocí a grandes personas que me han aportado muchísimo a mi crecimiento profesional y personal. "
       },
-      "3": {
-        jobTitle: "Jr. Backend Developer -",
+      "5": {
+        jobTitle: "Backend Developer -",
         company: "Middlesoft ",
         startDate: "2019",
         endDate: "2019",
         jobDescription:
-          "Desarrollo de aplicaciones ASP.NET y .NET Core con bases de datos SQL Server. "
+          "Mi primer empleo como desarrollador de software en la industria. Trabaje en equipos que desarrollaban aplicaciones web en ASP.NET y .NET Core con bases de datos SQL Server. Si bien me costó, sabía que así iba a serlo y aprendí lo mas que pude. También me lleve conocer a grandes personas con las que a día de hoy mantengo contacto. Una banda genial! "
       },
-      "4": {
+      "6": {
         jobTitle: "Community Manager -",
         company: "SU Noticias ",
         startDate: "2015",
         endDate: "2019",
         jobDescription:
-          "Encargado de gestionar las redes sociales, crear y distribuir contenido."
+          "Encargado de gestionar las redes sociales, crear y distribuir contenido para medio de comunicación digital. También realizaba tareas de diseño, posicionamiento SEO, administrador de sistemas y copywriter."
       },
-      "5": {
-        jobTitle: "Árbitro Oficial -",
-        company: "Organización de Fútbol del Interior (OFI) ",
-        startDate: "2016",
-        endDate: "2019",
-        jobDescription:
-          "Árbitro oficial en partidos regionales de primera división."
-      },
-      "6": {
-        jobTitle: "Árbitro Oficial -",
-        company: "Asociación Uruguaya de Fútbol (AUF) ",
-        startDate: "2014",
-        endDate: "2016",
-        jobDescription:
-          "Árbitro oficial en partidos oficiales de categoría sub 17 y sub 15."
-      },
-      "7": {
-        jobTitle: "Atención al cliente -",
-        company: "Casa Chiquis ",
-        startDate: "2010",
-        endDate: "2014",
-        jobDescription:
-          "Ventas, atención al cliente, administración, logística."
-      },
-      "8": {
-        jobTitle: "Socorrista Acuático -",
-        company: "Seguriocio ",
-        startDate: "2007",
-        endDate: "2009",
-        jobDescription:
-          "Salvamento marítimo por temporadas en piscinas con superficie superior a 200 metros cuadrados."
-      },
-      "9": {
-        jobTitle: "Árbitro Oficial -",
-        company: "Federación Andaluza de Fútbol (RFEF) ",
-        startDate: "2006",
-        endDate: "2010",
-        jobDescription:
-          "Árbitro oficial en partidos regionales de primera división y juveniles."
-      }
     },
   },
   education: {
     "0": {
-      degree: "Ingeniero en Computación -",
-      institution: "Facultad de Ingeniería / Udelar ",
+      degree: "Computer Engineer -",
+      institution: "School of Engineering / Udelar ",
       startDate: "2021",
-      endDate: "Presente",
-      description: "Educación Terciaria y Universitaria. "
+      endDate: "Present",
+      description: "Bachelor of Engineering. "
     },
     "1": {
-      degree: "Analista en TI -",
-      institution: "Programa de Formación para el Empleo TI - CUTI/INEFOP ",
+      degree: "IT Analyst -",
+      institution: "CUTI/INEFOP ",
       startDate: "2019",
       endDate: "2021",
-      description: "Programa de formación online en Tecnologías de la Información."
+      description: "Community colleges"
     },
     "2": {
-      degree: "Bachiller Tecnológico -",
-      institution: "Instituto Superior Brazo Oriental  ",
+      degree: "Bachelor of Technology -",
+      institution: "Higher Institute Brazo Oriental  ",
       startDate: "2013",
       endDate: "2018",
-      description: "Educación Media Tecnológica"
+      description: "Bachelor of Science"
     },
     "3": {
-      degree: "Ciclo Básico -",
-      institution: "Liceo 29 Alicia Goyena  ",
+      degree: "Basic Cycle -",
+      institution: "Institute 29 Alicia Goyena  ",
       startDate: "2001",
       endDate: "2004",
-      description: "Ciclo Básico"
+      description: "Junior colleges"
     }
   },
   certificate: {
     "0": {
-      name: "Analista en Tecnologías de la Información -",
-      institution: "Programa b_IT ",
+      name: "Information Technology Analyst -",
+      institution: "CUTI/INEFOP ",
       date: "2021",
       description:
-        "Segundo y último año aprobado de un programa de capacitación gubernamental para el empleo en TI patrocinado por INEFOP e impartido por Cuti. "
+        "Second and final approved year of a government IT job training program sponsored by INEFOP and delivered by Cuti. "
     },
     "1": {
-      name: "Bachiller Tecnológico en Informática -",
-      institution: "Instituto Superior Brazo Oriental ",
+      name: "Bachelor of Technology in Computing-",
+      institution: "Higher Institute Brazo Oriental ",
       date: "2021",
       description:
-        "Bachiller Tecnológico en Informática con énfasis desarrollo de software, gestión de bases de datos, diseño web y soporte. "
+        "Bachelor's Degree in Computer Technology with emphasis on software development, database management, web design and support. "
     },
     "2": {
-      name: "Programador -",
-      institution: "Programa b_IT ",
+      name: "Programmer -",
+      institution: "CUTI/INEFOP ",
       date: "2020",
       description:
-        "Primer año aprobado de un programa de capacitación gubernamental para el empleo en TI patrocinado por INEFOP e impartido por Cuti. "
+        "First approved year of a government training program for IT employment sponsored by INEFOP and delivered by Cuti. "
     },
     "3": {
       name: "Big Data Consultant Jr -",
       institution: "Fundación Telefónica ",
       date: "2019",
       description:
-        "El Big Data Consultant conoce las necesidades analíticas de las áreas de negocio y ayuda a resolverlas, así como a descubrir nuevas oportunidades basadas en la transformación digital y orientación a los datos. "
+        "As a Big Data Consultant Jr I know the analytical needs of business areas and can help solve them, as well as discover new opportunities based on digital transformation and data orientation. "
     },
+
     "4": {
-      name: "Árbitro Oficial -",
-      institution: "Asociación Uruguaya de Fútbol ",
-      date: "2016",
-      description:
-        "Curso oficial de AUF para árbitros de fútbol profesional. "
-    },
-    "5": {
-      name: "Técnico en reparación PC y Redes -",
+      name: "PC and Network Repair Technician -",
       institution: "Círculo Informático ",
       date: "2011",
       description:
-        "Curso intensivo en reparación de pc y redes informáticas. "
+        "Intensive course in PC repair and computer networks. "
     },
-    "6": {
-      name: "Salvamento Maritimo -",
+    "5": {
+      name: "First Aid -",
       institution: "Cruz Roja ",
       date: "2007",
       description:
-        "Capacitación téorica/física en salvamento marítimo. "
-    },
-    "7": {
-      name: "Primeros Auxilios -",
-      institution: "Cruz Roja ",
-      date: "2007",
-      description:
-        "Capacitación téorica/práctica en pirmeros auxilios. "
-    },
+        "Theoretical/practical training in first aid. "
+    }
   },
   skills: {
     "0": {
@@ -249,49 +209,120 @@ const api = {
     },
     "1": {
       name: "CSS",
-      percentage: "70%"
+      percentage: "80%"
     },
     "2": {
       name: "JavaScript",
       percentage: "90%"
     },
-
     "3": {
-      name: "Node",
-      percentage: "70%"
+      name: "TypeScript",
+      percentage: "80%"
     },
     "4": {
-      name: "Vue",
-      percentage: "70%"
+      name: "Node",
+      percentage: "80%"
     },
     "5": {
-      name: "React",
+      name: "Express",
       percentage: "80%"
     },
     "6": {
-      name: "Java",
-      percentage: "60%"
+      name: "Nest",
+      percentage: "70%"
     },
     "7": {
-      name: ".NET",
-      percentage: "40%"
+      name: "React",
+      percentage: "80%"
     },
     "8": {
-      name: "Python",
-      percentage: "30%"
+      name: "Next",
+      percentage: "80%"
     },
     "9": {
-      name: "Docker",
-      percentage: "50%"
+      name: "Vue",
+      percentage: "80%"
     },
     "10": {
-      name: "Git",
+      name: "Nuxt",
       percentage: "80%"
     },
     "11": {
-      name: "Testing",
+      name: "Svelte",
+      percentage: "80%"
+    },
+    "12": {
+      name: "SvelteKit",
+      percentage: "75%"
+    },
+    "13": {
+      name: "Java",
+      percentage: "75%"
+    },
+    "14": {
+      name: "SpringBoot",
+      percentage: "80%"
+    },
+    "15": {
+      name: "Docker",
       percentage: "70%"
     },
+    "16": {
+      name: "Git",
+      percentage: "90%"
+    },
+    "17": {
+      name: "Azure DevOps",
+      percentage: "75%"
+    },
+    "18": {
+      name: "Capacitor",
+      percentage: "75%"
+    },
+    "19": {
+      name: "Ionic",
+      percentage: "75%"
+    },
+    "20": {
+      name: "Electron",
+      percentage: "75%"
+    },
+    "21": {
+      name: "Jest",
+      percentage: "75%"
+    },
+    "22": {
+      name: "Testing Library",
+      percentage: "75%"
+    },
+    "23": {
+      name: "Vitest",
+      percentage: "75%"
+    },
+    "24": {
+      name: "Playwright",
+      percentage: "75%"
+    },
+    "25": {
+      name: "Puppeter",
+      percentage: "75%"
+    },
+    "26": {
+      name: "Webpack",
+      percentage: "75%"
+    },
+    "27": {
+      name: "Vite",
+      percentage: "75%"
+    },
+    "28": {
+      name: "Babel",
+      percentage: "75%"
+    },
+    "29": {
+      name: "Rollup",
+      percentage: "75%"
+    }
   }
 };
 
