@@ -15,6 +15,49 @@ import api from "../hooks/useGetDara";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 
+//retornamos nuestra estructura
+const App = () => {
+  const { t } = useTranslation();
+  const exportPdf = () => {
+    html2canvas(document.querySelector("#capture")).then((canvas) => {
+      document.body.appendChild(canvas); // if you want see your screenshot in body.
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF("p", "mm", "a4");
+      const width = pdf.internal.pageSize.getWidth();
+      const height = pdf.internal.pageSize.getHeight();
+      pdf.addImage(imgData, "PNG", 0, 0, width, height);
+      pdf.save("download.pdf");
+    });
+  };
+  return (
+    <Main id="capture">
+      <GlobalStyle />
+      <Sidebar>
+        <About
+          avatar={api.data.avatar}
+          name={t("name")}
+          profession={t("profession")}
+          bio={t("bio")}
+          address={api.data.address}
+          social={api.data.social}
+          referencia={api.data.referencia}
+          contactPhone={api.data.referencia}
+          contactEmail={api.data.contactEmail}
+          onClick={exportPdf}
+        />
+      </Sidebar>
+      <Info>
+        <Experience data={api.data.experience} />
+        <Education data={api.education} />
+        <Certificates data={api.certificate} />
+        <Skills data={api.skills} />
+      </Info>
+    </Main>
+  );
+};
+
+export default App;
+
 const GlobalStyle = createGlobalStyle`
 body {
     font-family: 'Lato', sans-serif;
@@ -50,45 +93,3 @@ body {
   visibility: visible;
 }
 `;
-//retornamos nuestra estructura
-const App = () => {
-  const { t } = useTranslation();
-  const exportPdf = () => {
-    html2canvas(document.querySelector("#capture")).then((canvas) => {
-      document.body.appendChild(canvas); // if you want see your screenshot in body.
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF("p", "mm", "a4");
-      const width = pdf.internal.pageSize.getWidth();
-      const height = pdf.internal.pageSize.getHeight();
-      pdf.addImage(imgData, "PNG", 0, 0, width, height);
-      pdf.save("download.pdf");
-    });
-  };
-  return (
-    <Main id="capture">
-      <GlobalStyle />
-      <Sidebar>
-        <About
-          avatar={api.data.avatar}
-          name={t('name')}
-          profession={t('profession')}
-          bio={t('bio')}
-          address={api.data.address}
-          social={api.data.social}
-          referencia={api.data.referencia}
-          contactPhone={api.data.referencia}
-          contactEmail={api.data.contactEmail}
-          onClick={exportPdf}
-        />
-      </Sidebar>
-      <Info>
-        <Experience data={api.data.experience} />
-        <Education data={api.education} />
-        <Certificates data={api.certificate} />
-        <Skills data={api.skills} />
-      </Info>
-    </Main>
-  );
-};
-
-export default App;

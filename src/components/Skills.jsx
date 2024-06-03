@@ -10,19 +10,14 @@ const Skills = (props) => {
     <div className="Skills">
       <H2Styled name={t("skill")} />
       <SkillsContainer>
-        {Object.values(props.data).map((skill, index) => (
+        {props.data.map((skill, index) => (
           <SkillsItem key={`Skills-${index}`}>
-            <SkillsH5>{skill.name}</SkillsH5>
-
-            {/* <SkillsLine>
-            <SkillsSpan width={skill.percentage} />
-          </SkillsLine>
-            <span className="tiptext">{skill.percentage}</span> */}
+            <SkillsH5>{skill}</SkillsH5>
           </SkillsItem>
         ))}
       </SkillsContainer>
     </div>
-  )
+  );
 };
 
 export default Skills;
