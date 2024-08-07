@@ -70,42 +70,36 @@ const api = {
         endDate: "Present",
       },
       1: {
-        jobTitle: "Content Creator -",
-        company: "Lecasabe ",
-        startDate: "2024",
-        endDate: "Present",
-      },
-      2: {
         jobTitle: "Programming Tutor -",
         company: "Superprof ",
         startDate: "2023",
         endDate: "Present",
       },
-      3: {
+      2: {
         jobTitle: "Software Engineer -",
         company: "TedescoDev ",
         startDate: "2018",
         endDate: "Present",
       },
-      4: {
+      3: {
         jobTitle: "Software Developer -",
         company: "VU Inc. ",
         startDate: "2021",
         endDate: "2024",
       },
-      5: {
+      4: {
         jobTitle: "Frontend Developer -",
         company: "Broken Rubik ",
         startDate: "2019",
         endDate: "2020",
       },
-      6: {
+      5: {
         jobTitle: "Backend Developer -",
         company: "Middlesoft ",
         startDate: "2019",
         endDate: "2019",
       },
-      7: {
+      6: {
         jobTitle: "Community Manager -",
         company: "SU Noticias ",
         startDate: "2015",
@@ -203,6 +197,7 @@ const api = {
     "SvelteKit",
     "Java",
     "SpringBoot",
+    "Kafka",
     "Docker",
     "Git",
     "Azure DevOps",
