@@ -22,8 +22,8 @@ export default function initConfigI18n() {
                     translation: PT
                 }
             },
-            lng: "en", // if you're using a language detector, do not define the lng option
-            fallbackLng: "en",
+            lng: "es",
+            fallbackLng: "es",
 
             interpolation: {
                 escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape

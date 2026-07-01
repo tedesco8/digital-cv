@@ -1,5 +1,7 @@
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+require("dotenv").config();
 
 module.exports = {
   entry: "./src/index.js",
@@ -41,6 +43,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      "process.env.GA_MEASUREMENT_ID": JSON.stringify(process.env.GA_MEASUREMENT_ID || ""),
+    }),
     new HtmlWebPackPlugin({
       template: "./public/index.html",
       filename: "./index.html",

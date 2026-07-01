@@ -1,28 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const MainStyled = styled.div`
-display: grid;
-grid-template-columnns: minmax(auto, 1024px);
-justify-content: center;
-padding: 1em;
-`;
-const MainContainer = styled.div`
-display: grid;
-grid-template-columns: 1fr 3fr;
-grid-gap: 2rem;
-grid-row-gap: 0.5em;
+const PageWrapper = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 
-@media only screen and (max-width : 767px) {
-  grid-template-columns: 1fr;
-}
+  @media (max-width: 768px) {
+    padding: 0 24px;
+  }
 `;
+
 const Main = ({ children, id }) => (
-    <MainStyled id={id}>
-        <MainContainer>
-          {children}
-        </MainContainer>
-    </MainStyled>
+  <main id={id}>
+    <PageWrapper>
+      {children}
+    </PageWrapper>
+  </main>
 );
 
 export default Main;

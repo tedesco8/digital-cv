@@ -3,13 +3,13 @@ const api = {
     avatar:
       "https://res.cloudinary.com/ddzlqebet/image/upload/v1707776594/pablo-tedesco-profile.jpg",
     name: "Pablo Tedesco",
-    profession: "Software Developer",
-    bio: "Soy un programador al que le encantan los nuevos desafíos. Siempre estoy aprendiendo algo nuevo e intentando mejorando día a día.",
+    profession: "Desarrollador · Analista Político · Creador de Contenido",
+    bio: "Desarrollador de software con más de 6 años de experiencia. Fundador de SU Noticias (3M de alcance orgánico en Facebook). Analista político y creador de contenido sobre libertad individual, instituciones y poder en Uruguay.",
     address: "Montevideo, Uruguay.",
     social: {
       0: {
         name: "facebook",
-        url: "https://www.facebook.com/pablo.tedesco.583/",
+        url: "https://www.facebook.com/tedescorodriguez/",
       },
       1: {
         name: "twitter",
@@ -73,13 +73,13 @@ const api = {
         jobTitle: "Programming Tutor -",
         company: "Superprof ",
         startDate: "2023",
-        endDate: "Present",
+        endDate: "2025",
       },
       2: {
         jobTitle: "Software Engineer -",
         company: "TedescoDev ",
         startDate: "2018",
-        endDate: "Present",
+        endDate: "2024",
       },
       3: {
         jobTitle: "Software Developer -",
