@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --module production && node scripts/post-build.js",
-    "start": "webpack-dev-server --open --mode development"
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && webpack --module production && node scripts/post-build.js",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server --open --mode development"
   },
   "repository": {
     "type": "git",
